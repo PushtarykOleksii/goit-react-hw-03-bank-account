@@ -8,17 +8,17 @@ const TransactionHistory = ({ transaction }) => {
       <table className={style.history}>
         <thead>
           <tr>
-            <th>Transaction</th>
-            <th>Amount</th>
-            <th>Date</th>
+            <th>TRANSACTION</th>
+            <th>AMOUNT</th>
+            <th>DATA</th>
           </tr>
         </thead>
-        <tbody className={style.line}>
+        <tbody>
           {transaction.map(item => (
-            <tr className={style.line} key={item.id}>
-              <td>{item.type}</td>
-              <td>{item.amount}$</td>
-              <td>{item.data}</td>
+            <tr key={item.id}>
+              <td className={style.line}>{item.type}</td>
+              <td className={style.line}>{item.amount}$</td>
+              <td className={style.line}>{item.data}</td>
             </tr>
           ))}
         </tbody>

@@ -1,4 +1,3 @@
-/* eslint-disable react/state-in-constructor */
 import React, { Component } from 'react';
 import shortid from 'shortid';
 import { ToastContainer, toast } from 'react-toastify';
@@ -10,29 +9,28 @@ import TransactionHistory from '../TransactionHistory/TransactionHistory';
 export default class Dashboard extends Component {
   state = {
     transaction: [],
-    amount: '',
     balance: 0,
-    balanceAdd: 0,
-    balanceStay: 0,
+    amount: '',
+    balanceDeposit: 0,
+    balanceWithdraw: 0,
   };
 
-  // check localStorage
   componentDidMount() {
-    const getItem = localStorage.getItem('bank');
-    if (getItem !== null) {
-      const item = JSON.parse(getItem);
+    const getIte = localStorage.getItem('bank');
+    if (getIte !== null) {
+      const item = JSON.parse(getIte);
       this.setState({ ...item });
     }
   }
 
-  // localStorage.setItem
-  componentDidUpdate(prevState) {
-    const { transaction } = this.state;
-    if (prevState.transaction !== transaction) {
+  componentDidUpdate(prevProp, prevState) {
+    const { transiction } = this.state;
+    if (prevState.transiction !== transiction) {
       localStorage.setItem('bank', JSON.stringify(this.state));
     }
   }
 
+  // input;
   handleChange = ({ target }) => {
     const { name, value } = target;
     this.setState({
@@ -58,7 +56,7 @@ export default class Dashboard extends Component {
     toast.error('Not enough money! Please enter correct number');
 
   addTransaction = (stateObject, typeName) => {
-    if (Number(stateObject.amount) <= 0) {
+    if (Number(stateObject.amount) === 0) {
       this.notifyWarn();
       this.resetInput();
       return;

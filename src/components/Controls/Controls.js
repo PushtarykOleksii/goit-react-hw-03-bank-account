@@ -6,8 +6,8 @@ const Controls = ({ amount, onClick, onChange }) => (
   <>
     <section className={style.controls}>
       <input
-        placeholder="Place amount of money to..."
-        className={style.input}
+        className={style.imput}
+        placeholder="Amount of money you want to..."
         type="number"
         name="amount"
         onClick={onClick}

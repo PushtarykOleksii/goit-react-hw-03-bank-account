@@ -7,7 +7,6 @@ const App = () => (
   <>
     <Dashboard />
   </>
-)
-
+);
 
 export default App;
