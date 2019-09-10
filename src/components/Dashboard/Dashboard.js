@@ -16,6 +16,7 @@ export default class Dashboard extends Component {
     balanceStay: 0,
   };
 
+  // check localStorage
   componentDidMount() {
     const getItem = localStorage.getItem('bank');
     if (getItem !== null) {
@@ -24,7 +25,8 @@ export default class Dashboard extends Component {
     }
   }
 
-  componentDidUpdate(prevProp, prevState) {
+  // localStorage.setItem
+  componentDidUpdate(prevState) {
     const { transaction } = this.state;
     if (prevState.transaction !== transaction) {
       localStorage.setItem('bank', JSON.stringify(this.state));
@@ -73,6 +75,7 @@ export default class Dashboard extends Component {
         transaction: [...prevState.transaction, transitionAdd],
         balance: stateObject.balance + Number(stateObject.amount),
         balanceDeposit: stateObject.balanceDeposit + Number(stateObject.amount),
+        amount: '',
       }));
     } else if (typeName === 'withdraw') {
       if (stateObject.amount <= stateObject.balance) {
@@ -81,6 +84,7 @@ export default class Dashboard extends Component {
           balance: stateObject.balance - Number(stateObject.amount),
           balanceWithdraw:
             stateObject.balanceWithdraw + Number(stateObject.amount),
+          amount: '',
         }));
       } else {
         this.resetInput();
