@@ -24,8 +24,8 @@ export default class Dashboard extends Component {
   }
 
   componentDidUpdate(prevProp, prevState) {
-    const { transiction } = this.state;
-    if (prevState.transiction !== transiction) {
+    const { transaction } = this.state;
+    if (prevState.transiction !== transaction) {
       localStorage.setItem('bank', JSON.stringify(this.state));
     }
   }
