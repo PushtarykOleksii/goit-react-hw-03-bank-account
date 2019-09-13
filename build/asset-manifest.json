@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/goit-react-hw-03-bank-account/static/css/main.5b7dd847.chunk.css",
-    "main.js": "/goit-react-hw-03-bank-account/static/js/main.552e7227.chunk.js",
-    "main.js.map": "/goit-react-hw-03-bank-account/static/js/main.552e7227.chunk.js.map",
+    "main.js": "/goit-react-hw-03-bank-account/static/js/main.0ccc9faf.chunk.js",
+    "main.js.map": "/goit-react-hw-03-bank-account/static/js/main.0ccc9faf.chunk.js.map",
     "runtime~main.js": "/goit-react-hw-03-bank-account/static/js/runtime~main.a2b09cc2.js",
     "runtime~main.js.map": "/goit-react-hw-03-bank-account/static/js/runtime~main.a2b09cc2.js.map",
     "static/css/2.39017165.chunk.css": "/goit-react-hw-03-bank-account/static/css/2.39017165.chunk.css",
     "static/js/2.4f347a42.chunk.js": "/goit-react-hw-03-bank-account/static/js/2.4f347a42.chunk.js",
     "static/js/2.4f347a42.chunk.js.map": "/goit-react-hw-03-bank-account/static/js/2.4f347a42.chunk.js.map",
     "index.html": "/goit-react-hw-03-bank-account/index.html",
-    "precache-manifest.01e981dbcb5a6c79c2d1ff76241a2543.js": "/goit-react-hw-03-bank-account/precache-manifest.01e981dbcb5a6c79c2d1ff76241a2543.js",
+    "precache-manifest.98e94b48ea1be8be3b89b197c0a413c0.js": "/goit-react-hw-03-bank-account/precache-manifest.98e94b48ea1be8be3b89b197c0a413c0.js",
     "service-worker.js": "/goit-react-hw-03-bank-account/service-worker.js",
     "static/css/2.39017165.chunk.css.map": "/goit-react-hw-03-bank-account/static/css/2.39017165.chunk.css.map",
     "static/css/main.5b7dd847.chunk.css.map": "/goit-react-hw-03-bank-account/static/css/main.5b7dd847.chunk.css.map"
